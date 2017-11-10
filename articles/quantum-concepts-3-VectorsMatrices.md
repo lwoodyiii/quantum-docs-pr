@@ -60,7 +60,7 @@ The most common way to multiply two vectors together is through the inner produc
 			\psi_{n}
 		\end{bmatrix}
 	}
-	= \phi^\dagger \psi=\phi_1^*\psi_1 + \cdots + \phi_n^* \psi_n.
+	= \phi^\dagger \psi = \phi_1^\* \psi_1 + \cdots + \phi_n^\* \psi_n.
 \end{equation}
 This notation also allows the norm of a vector $v$ to be written as $\sqrt{\langle v, v\rangle}$.
 
