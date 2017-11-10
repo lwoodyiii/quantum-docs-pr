@@ -27,12 +27,14 @@ Some familiarity with vectors and matrices is essential to understand quantum co
 
 A column vector (or simply vector) $v$ of dimension (or size) $n$ is a collection of $n$ complex numbers $(v_1,v_2,
 \ldots,v_n)$ arranged as a column:
-$$v =\begin{bmatrix}
-v_1\\
-v_2\\
-\vdots\\
-v_n
-\end{bmatrix}.$$
+\(
+	v =\begin{bmatrix}
+	v_1\\
+	v_2\\
+	\vdots\\
+	v_n
+	\end{bmatrix}.
+\)
 The norm of a vector $v$ is defined as $\sqrt{\sum_i |v_i|^2}$. A vector is said to be of unit norm (or alternatively it is called a unit vector) if its norm is $1$. The adjoint of a vector $v$ is denoted $v^\dagger$ and is defined to be the following row vector
 $$
 \begin{bmatrix}x_1 \\ \vdots \\ x_n \end{bmatrix}^\dagger = \begin{bmatrix}x_1^* & \cdots & x_n^* \end{bmatrix}.
