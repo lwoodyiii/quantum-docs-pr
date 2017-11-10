@@ -47,24 +47,25 @@ $$
 This notation also allows the norm of a vector $v$ to be written as $\sqrt{\langle v, v\rangle}$.
 
 We can multiply a vector with a number $c$ to form a new vector whose entries are multiplied by $c$. We can also add two vectors $u$ and $v$ to form a new vector whose entries are the sum of the entries of $u$ and $v$. These operations are depicted below:
-$$\mathrm{If}~u =\begin{bmatrix}
-u_1\\
-u_2\\
-\vdots\\
-u_n
-\end{bmatrix}~\mathrm{and}~
-v =\begin{bmatrix}
-	v_1\\
-	v_2\\
-	\vdots\\
-	v_n
-\end{bmatrix},~\mathrm{then}~
-au+bv =\begin{bmatrix}
-au_1+bv_1\\
-au_2+bv_2\\
-\vdots\\
-au_n+bv_n
-\end{bmatrix}.
+$$
+	\textrm{If}~u = \begin{bmatrix}
+		u_1 \\\\
+		u_2 \\\\
+		\vdots \\\\
+		u_n
+	\end{bmatrix}~\textrm{and}~
+	v =\begin{bmatrix}
+		v_1 \\\\
+		v_2 \\\\
+		\vdots \\\\
+		v_n
+	\end{bmatrix},~\textrm{then}~
+	au + bv = \begin{bmatrix}
+		au_1+bv_1 \\\\
+		au_2+bv_2 \\\\
+		\vdots \\\\
+		au_n+bv_n
+	\end{bmatrix}.
 $$
 
 A matrix of size $m \times n$ is a collection of $mn$ complex numbers arranged in $m$ rows and $n$ columns as shown below:
