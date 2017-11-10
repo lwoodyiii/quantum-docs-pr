@@ -36,4 +36,7 @@
       href: quantum-techniques-6-PuttingItAllTogether.md
 - name: For more information
   href: quantum-ForMoreInfo.md
+- name: "REMOVE LaTeX Test"
+  href: display-mode-latex-test.md
+  
 
