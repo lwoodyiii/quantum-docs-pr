@@ -84,7 +84,7 @@ operation Example() : () {
 > [!TIP]
 > Later, we will see more compact ways of writing this operation that do not require manual flow control.
 
-We can also prepare states such as $\ket{=} \defeq \left(\ket{0} + \ket{1}\right) / \sqrt{2}$ and $\ket{-} \defeq \left(\ket{0} - \ket{1}\right) / \sqrt{2}$ by using the Hadamard transform $H$, represented in Q# by the primitive operation `H : (Qubit => () : Adjoint, Controlled)`:
+We can also prepare states such as $\ket{+} \mathrel{:=} \left(\ket{0} + \ket{1}\right) / \sqrt{2}$ and $\ket{-} \mathrel{:=} \left(\ket{0} - \ket{1}\right) / \sqrt{2}$ by using the Hadamard transform $H$, represented in Q# by the primitive operation `H : (Qubit => () : Adjoint, Controlled)`:
 
 ```qsharp
 operation PreparePlusMinusState(bitstring : Bool[], register : Qubit[]) : () {

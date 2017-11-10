@@ -26,19 +26,25 @@ ms.topic: article-type-from-white-list
 Some familiarity with vectors and matrices is essential to understand quantum computing. We provide a brief introduction below and interested readers are recommended to read a standard reference on linear algebra such as [Strang, G. (1993). Introduction to linear algebra (Vol. 3). Wellesley, MA: Wellesley-Cambridge Press] or an online reference such as http://joshua.smcvt.edu/linearalgebra/.
 
 A column vector (or simply vector) $v$ of dimension (or size) $n$ is a collection of $n$ complex numbers $(v_1, v_2, \ldots, v_n)$ arranged as a column:
-\\(
+\begin{equation}
 	v = \begin{bmatrix}
-	v_1 \\\\
-	v_2 \\\\
-	\vdots \\\\
-	v_n
+		v_1 \\\\
+		v_2 \\\\
+		\vdots \\\\
+		v_n
 	\end{bmatrix}.
-\\)
-The norm of a vector $v$ is defined as $\sqrt{\sum_i | v_i|^2}$.
+\end{equation}
+The norm of a vector $v$ is defined as $\sqrt{\sum\_i | v\_i|^2}$.
 A vector is said to be of unit norm (or alternatively it is called a unit vector) if its norm is $1$. The adjoint of a vector $v$ is denoted $v^\dagger$ and is defined to be the following row vector
-\\(
-	\begin{bmatrix}x_1 \\ \vdots \\ x_n \end{bmatrix}^\dagger = \begin{bmatrix}x_1^* & \cdots & x_n^* \end{bmatrix}.
-\\)
+\begin{equation}
+	\begin{bmatrix}
+		x_1 \\\\
+		\vdots \\\\
+		x_n
+	\end{bmatrix}^\dagger = \begin{bmatrix}
+		x_1^* & \cdots & x_n^*
+	\end{bmatrix}.
+\end{equation}
 
 The most common way to multiply two vectors together is through the inner product, otherwise known as a dot product.  The inner product gives the projection of one vector onto another and is invaluable in describing how to express one vector as a sum of other simpler vectors.  The inner product between $\phi$ and $\psi$, denoted $\left\langle \phi, \psi\right\rangle$ is defined as
 $$
