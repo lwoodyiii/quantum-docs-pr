@@ -137,27 +137,46 @@ For a square matrix $A$, we say a matrix $B$ is its inverse if $AB = \boldone$. 
 
 
 Finally, the tensor product (or Kronecker product) of two matrices $M$ of size $m\times n$ and $N$ of size $p \times q$ is a larger matrix $P=M\otimes N$ of size $mp \times nq$, and is obtained from $M$ and $N$ as follows:
-$$
-M \otimes N = 
-\begin{bmatrix}
-M_{11} ~~ \cdots ~~ M_{1n}\\
-\ddots\\
-M_{m1}  ~~ \cdots ~~ M_{mn}\\
-\end{bmatrix}\times
-\begin{bmatrix}
-N_{11}  ~~ \cdots ~~ N_{1q}\\
-\ddots\\
-N_{p1} ~~ \cdots ~~ N_{pq}\\
-\end{bmatrix}
-=
-\begin{bmatrix}
-M_{11} \begin{bmatrix} N_{11}  ~~ \cdots ~~ N_{1q}\\ \ddots\\ N_{p1} ~~ \cdots ~~ N_{pq}\\ \end{bmatrix}~~ \cdots ~~ 
-M_{1n} \begin{bmatrix} N_{11}  ~~ \cdots ~~ N_{1q}\\ \ddots\\ N_{p1} ~~ \cdots ~~ N_{pq}\\ \end{bmatrix}\\
-\ddots\\
-M_{m1} \begin{bmatrix} N_{11}  ~~ \cdots ~~ N_{1q}\\ \ddots\\ N_{p1} ~~ \cdots ~~ N_{pq}\\ \end{bmatrix}~~ \cdots ~~ 
-M_{mn} \begin{bmatrix} N_{11}  ~~ \cdots ~~ N_{1q}\\ \ddots\\ N_{p1} ~~ \cdots ~~ N_{pq}\\ \end{bmatrix}\\
-\end{bmatrix}.
-$$
+\begin{equation}
+	M \otimes N =
+	\begin{bmatrix}
+		M_{11} ~~ \cdots ~~ M_{1n} \\\\
+		\ddots \\\\
+		M_{m1}  ~~ \cdots ~~ M_{mn} \\\\
+	\end{bmatrix} \times
+	\begin{bmatrix}
+		N_{11}  ~~ \cdots ~~ N_{1q} \\\\
+		\ddots \\\\
+		N_{p1} ~~ \cdots ~~ N_{pq} \\\\
+	\end{bmatrix} =
+	\begin{bmatrix}
+		M_{11}
+		\begin{bmatrix}
+			N_{11}  ~~ \cdots ~~ N_{1q} \\\\
+			\ddots \\\\
+			N_{p1} ~~ \cdots ~~ N_{pq} \\\\
+		\end{bmatrix} ~~ \cdots ~~ 
+		M_{1n}
+		\begin{bmatrix}
+			N_{11}  ~~ \cdots ~~ N_{1q} \\\\
+			\ddots \\\\
+			N_{p1} ~~ \cdots ~~ N_{pq} \\\\
+		\end{bmatrix} \\\\
+		\ddots\\\\
+		M_{m1}
+		\begin{bmatrix}
+			N_{11} ~~ \cdots ~~ N_{1q} \\\\
+			\ddots \\\\
+			N_{p1} ~~ \cdots ~~ N_{pq} \\\\
+		\end{bmatrix} ~~ \cdots ~~ 
+		M_{mn}
+		\begin{bmatrix}
+			N_{11} ~~ \cdots ~~ N_{1q} \\\\
+			\ddots \\\\
+			N_{p1} ~~ \cdots ~~ N_{pq} \\\\
+		\end{bmatrix} \\\\
+	\end{bmatrix}.
+\end{equation}
 This is better demonstrated using some examples:
 $$
 \begin{bmatrix} a \\ b  \end{bmatrix} \otimes \begin{bmatrix} c \\ d \\ e\end{bmatrix} 
