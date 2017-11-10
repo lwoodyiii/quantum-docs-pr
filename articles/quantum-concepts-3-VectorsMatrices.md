@@ -65,68 +65,73 @@ The most common way to multiply two vectors together is through the inner produc
 This notation also allows the norm of a vector $v$ to be written as $\sqrt{\langle v, v\rangle}$.
 
 We can multiply a vector with a number $c$ to form a new vector whose entries are multiplied by $c$. We can also add two vectors $u$ and $v$ to form a new vector whose entries are the sum of the entries of $u$ and $v$. These operations are depicted below:
-$$
-	\textrm{If}~u = \begin{bmatrix}
+\begin{equation}
+	\textrm{If}\~u = \begin{bmatrix}
 		u_1 \\\\
 		u_2 \\\\
 		\vdots \\\\
 		u_n
-	\end{bmatrix}~\textrm{and}~
-	v =\begin{bmatrix}
+	\end{bmatrix}\~\textrm{and}\~
+	v =
+	\begin{bmatrix}
 		v_1 \\\\
 		v_2 \\\\
 		\vdots \\\\
 		v_n
-	\end{bmatrix},~\textrm{then}~
+	\end{bmatrix},\~\textrm{then}\~
 	au + bv = \begin{bmatrix}
-		au_1+bv_1 \\\\
-		au_2+bv_2 \\\\
+		au_1 + bv_1 \\\\
+		au_2 + bv_2 \\\\
 		\vdots \\\\
 		au_n+bv_n
 	\end{bmatrix}.
-$$
+\end{equation}
 
 A matrix of size $m \times n$ is a collection of $mn$ complex numbers arranged in $m$ rows and $n$ columns as shown below:
-$$M = 
-\begin{bmatrix}
-M_{11} ~~ M_{12} ~~ \cdots ~~ M_{1n}\\
-M_{21} ~~ M_{22} ~~ \cdots ~~ M_{2n}\\
-\ddots\\
-M_{m1} ~~ M_{m2} ~~ \cdots ~~ M_{mn}\\
-\end{bmatrix}$$
+\begin{equation}
+	M =
+	\begin{bmatrix}
+		M_{11} ~~ M_{12} ~~ \cdots ~~ M_{1n} \\\\
+		M_{21} ~~ M_{22} ~~ \cdots ~~ M_{2n} \\\\
+		\ddots \\\\
+		M_{m1} ~~ M_{m2} ~~ \cdots ~~ M_{mn} \\\\
+	\end{bmatrix}
+\end{equation}
 
-Note that a vector of dimension $n$ is simply a matrix of size $n \times 1$. Just like with vectors, we can multiply a matrix with a number $c$ to obtain a new matrix where every entry is multiplied with $c$, and we can add two matrices of the same size to produce a new matrix whose entries are the sum of the respective entries of the two matrices. 
+Note that a vector of dimension $n$ is simply a matrix of size $n \times 1$. Just like with vectors, we can multiply a matrix with a number $c$ to obtain a new matrix where every entry is multiplied with $c$, and we can add two matrices of the same size to produce a new matrix whose entries are the sum of the respective entries of the two matrices.
 
 We can also multiply two matrices $M$ of dimension $m\times n$ and $N$ of dimension $n \times p$ to get a new matrix $P$ of dimension $m \times p$ as follows:
-$$
-\begin{bmatrix}
-	M_{11} ~~ M_{12} ~~ \cdots ~~ M_{1n}\\
-	M_{21} ~~ M_{22} ~~ \cdots ~~ M_{2n}\\
-	\ddots\\
-	M_{m1} ~~ M_{m2} ~~ \cdots ~~ M_{mn}\\
-\end{bmatrix}\times
-\begin{bmatrix}
-N_{11} ~~ N_{12} ~~ \cdots ~~ N_{1p}\\
-N_{21} ~~ N_{22} ~~ \cdots ~~ N_{2p}\\
-\ddots\\
-N_{n1} ~~ N_{n2} ~~ \cdots ~~ N_{np}\\
-\end{bmatrix} =
-\begin{bmatrix}
-P_{11} ~~ P_{12} ~~ \cdots ~~ P_{1p}\\
-P_{21} ~~ P_{22} ~~ \cdots ~~ P_{2p}\\
-\ddots\\
-P_{m1} ~~ P_{m2} ~~ \cdots ~~ P_{mp}\\
-\end{bmatrix},
-$$
-where the entry $P_{ik} = \sum_j M_{ij}N_{jk}$. For example, the entry $P_{11}$ is the inner product of the first row of $M$ with the first column of $N$. Note that since a vector is simply a special case of a matrix, this definition extends to matrix--vector multiplication. 
+\begin{equation}
+	\begin{bmatrix}
+		M_{11} ~~ M_{12} ~~ \cdots ~~ M_{1n} \\\\
+		M_{21} ~~ M_{22} ~~ \cdots ~~ M_{2n} \\\\
+		\ddots \\\\
+		M_{m1} ~~ M_{m2} ~~ \cdots ~~ M_{mn} \\\\
+	\end{bmatrix}\times
+	\begin{bmatrix}
+		N_{11} ~~ N_{12} ~~ \cdots ~~ N_{1p} \\\\
+		N_{21} ~~ N_{22} ~~ \cdots ~~ N_{2p} \\\\
+		\ddots \\\\
+		N_{n1} ~~ N_{n2} ~~ \cdots ~~ N_{np} \\\\
+	\end{bmatrix} =
+	\begin{bmatrix}
+		P_{11} ~~ P_{12} ~~ \cdots ~~ P_{1p} \\\\
+		P_{21} ~~ P_{22} ~~ \cdots ~~ P_{2p} \\\\
+		\ddots \\\\
+		P_{m1} ~~ P_{m2} ~~ \cdots ~~ P_{mp} \\\\
+	\end{bmatrix},
+\end{equation}
+where the entry $P\_{ik} = \sum\_j M\_{ij}N\_{jk}$. For example, the entry $P\_{11}$ is the inner product of the first row of $M$ with the first column of $N$. Note that since a vector is simply a special case of a matrix, this definition extends to matrix--vector multiplication. 
 
 All the matrices we consider will either be square matrices, where the number of rows and columns are equal, or vectors, which corresponds to only $1$ column. One special square matrix is the identity matrix, denoted $\boldone$, which has all its diagonal elements equal to $1$ and the remaining elements equal to $0$:
-$$\boldone=\begin{bmatrix}
-1 ~~ 0 ~~ \cdots ~~ 0\\
-0 ~~ 1 ~~ \cdots ~~ 0\\
-~~ \ddots\\
-0 ~~ 0 ~~ \cdots ~~ 1\\
-\end{bmatrix}.$$
+\begin{equation}
+	\boldone = \begin{bmatrix}
+		1 ~~ 0 ~~ \cdots ~~ 0 \\\\
+		0 ~~ 1 ~~ \cdots ~~ 0 \\\\
+		~~ \ddots \\\\
+		0 ~~ 0 ~~ \cdots ~~ 1 \\\\
+	\end{bmatrix}.
+\end{equation}
 For a square matrix $A$, we say a matrix $B$ is its inverse if $AB = \boldone$. The inverse of a matrix need not exist, but when it exists it is unique and we denote it $A^{-1}$. For any matrix $M$, the adjoint or conjugate transpose of $M$, is a matrix $N$ such that $N_{ij} = M^*_{ji}$. The adjoint of $M$ is usually denoted $M^\dagger$. We say a matrix $U$ is unitary if $UU^\dagger = \boldone$ or equivalently, $U^{-1} = U^\dagger$.  Perhaps the most important property of unitary matrices is that they preserve the norm of a vector.  This happens because $\langle v,v \rangle=v^\dagger v = v^\dagger U^{-1} U v = \langle U v, U v\rangle$.  
 
 
