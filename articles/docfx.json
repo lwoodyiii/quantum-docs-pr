@@ -43,7 +43,7 @@
     },
     "fileMetadata": {},
     "template": [],
-    "markdownEngineName": "markdig",
+    "markdownEngineName": "dfm",
     "dest": "quantum-docs"
   }
 }
