@@ -22,6 +22,7 @@ ms.topic: article-type-from-white-list
 ---
 
 # Multiple Qubits
+
 While single qubit gates possess some counter-intuitive features, such as the ability to be in more than one state at a given time, if all we had in a quantum computer were single qubit gates then we would have a device with computational power that would be dwarfed by a calculator let alone a classical supercomputer.  The true power of quantum computing only becomes visible as we increase the number of qubits.  This power arises, in part, because the dimension of the vector space that quantum state vectors lie in grows exponentially with the number of qubits.  This means that while a single qubit can be trivially simulated, simulating a fifty qubit quantum computation would arguably push the limits existing supercomputers.  Increasing the size of the computation by only one additional qubit would make the simulation double the memory required to store the state and roughly double the computational time.  This rapid doubling of computational power is why a quantum computer with a relatively small number of qubits can far surpass the most powerful supercomputers ever built, for some computational tasks.
 
 But why do we have this exponential growth for quantum state vectors?  Our goal in this section is to review the rules used to build multi-qubit states out of single qubit states as well as discuss the gate operations that we need to include in our gate set to form a universal many-qubit quantum computer.  These tools are absolutely necessary for understanding the gate sets that are commonly used in Q# code and also to gain an  intuition about why quantum effects such as entanglement or interference render quantum computing more powerful than classical computing.
@@ -29,9 +30,20 @@ But why do we have this exponential growth for quantum state vectors?  Our goal 
 ## Representing two qubits
 The main difference between one and two-qubit states is that two-qubit states are four dimensional rather than two-dimensional.  This happens because the computational basis for two-qubit states is formed by the tensor products of one-qubit states.  For example
 
-$$
-00 \equiv \begin{bmatrix}1 \\0 \end{bmatrix}\otimes \begin{bmatrix}1 \\0 \end{bmatrix} = \begin{bmatrix}1 \\0\\0\\0 \end{bmatrix}\qquad 01 \equiv \begin{bmatrix}1 \\0 \end{bmatrix}\otimes \begin{bmatrix}0 \\1 \end{bmatrix} = \begin{bmatrix}0 \\1\\0\\0 \end{bmatrix}\qquad 10 \equiv \begin{bmatrix}0 \\1 \end{bmatrix}\otimes \begin{bmatrix}1 \\0 \end{bmatrix} = \begin{bmatrix}0 \\0\\1\\0 \end{bmatrix}\qquad 11 \equiv \begin{bmatrix}0 \\1 \end{bmatrix}\otimes \begin{bmatrix}0 \\1 \end{bmatrix} = \begin{bmatrix}0 \\0\\0\\1 \end{bmatrix}
-$$
+\begin{equation}
+    00 \equiv
+    \begin{bmatrix} 
+        1 \\\\ 0
+    \end{bmatrix} \otimes \begin{bmatrix}
+        1 \\\\ 0
+    \end{bmatrix} =
+    \begin{bmatrix}
+        1 \\\\ 0 \\\\ 0 \\\\ 0
+    \end{bmatrix}
+    \qquad
+    01
+    \equiv \begin{bmatrix}1 \\0 \end{bmatrix}\otimes \begin{bmatrix}0 \\1 \end{bmatrix} = \begin{bmatrix}0 \\1\\0\\0 \end{bmatrix}\qquad 10 \equiv \begin{bmatrix}0 \\1 \end{bmatrix}\otimes \begin{bmatrix}1 \\0 \end{bmatrix} = \begin{bmatrix}0 \\0\\1\\0 \end{bmatrix}\qquad 11 \equiv \begin{bmatrix}0 \\1 \end{bmatrix}\otimes \begin{bmatrix}0 \\1 \end{bmatrix} = \begin{bmatrix}0 \\0\\0\\1 \end{bmatrix}
+\end{equation}
 It is easy to see that more generally the quantum state of $n$ qubits is represented by a unit vector of dimension $2^n$ using this construction.  However, for two qubits the vector
 $$
 \begin{bmatrix} \alpha_{00} \\ \alpha_{01} \\ \alpha_{10} \\ \alpha_{11} \end{bmatrix}

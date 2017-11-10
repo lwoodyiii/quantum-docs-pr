@@ -48,7 +48,7 @@ A vector is said to be of unit norm (or alternatively it is called a unit vector
 
 The most common way to multiply two vectors together is through the inner product, otherwise known as a dot product.  The inner product gives the projection of one vector onto another and is invaluable in describing how to express one vector as a sum of other simpler vectors.  The inner product between $\phi$ and $\psi$, denoted $\left\langle \phi, \psi\right\rangle$ is defined as
 \begin{equation}
-	\ket{
+	\braket{
 		\begin{bmatrix}
 			\phi_1 \\\\
 			\vdots \\\\
@@ -177,42 +177,59 @@ Finally, the tensor product (or Kronecker product) of two matrices $M$ of size $
 		\end{bmatrix} \\\\
 	\end{bmatrix}.
 \end{equation}
+
 This is better demonstrated using some examples:
-$$
-\begin{bmatrix} a \\ b  \end{bmatrix} \otimes \begin{bmatrix} c \\ d \\ e\end{bmatrix} 
-=\begin{bmatrix} a \begin{bmatrix} c \\ d \\ e\end{bmatrix}  \\[1.5em] b \begin{bmatrix} c \\ d \\ e\end{bmatrix}  \end{bmatrix}
-= \begin{bmatrix} a c \\ a d \\a e \\ b c \\ b d \\ be\end{bmatrix}, \mathrm{~~and} \quad 
-\begin{bmatrix}
-a\ b\\c\ d
-\end{bmatrix}
-\otimes 
-\begin{bmatrix}
-e\ f\\g\ h
-\end{bmatrix}
-=
-\begin{bmatrix}
-a\begin{bmatrix}
-e\ f\\g\ h
-\end{bmatrix}
-b\begin{bmatrix}
-e\ f\\g\ h
-\end{bmatrix}
-\\[1em]
-c\begin{bmatrix}
-e\ f\\g\ h
-\end{bmatrix}
-d\begin{bmatrix}
-e\ f\\g\ h
-\end{bmatrix}
-\end{bmatrix}
-=
-\begin{bmatrix}
-ae\ af\ be\ bf\\
-ag\ ah\ bg\ bh\\
-ce\ cf\ de\ df\\
-cg\ ch\ dg\ dh
-\end{bmatrix}.
-$$
+\begin{equation}
+	\begin{bmatrix}
+		a \\\\ b
+	\end{bmatrix} \otimes
+	\begin{bmatrix}
+		c \\\\ d \\\\ e
+	\end{bmatrix} =
+	\begin{bmatrix}
+		a
+		\begin{bmatrix}
+			c \\\\ d \\\\ e
+		\end{bmatrix}
+		\\\\[1.5em]
+		b
+		\begin{bmatrix}
+			c \\\\ d \\\\ e
+		end{bmatrix}
+	\end{bmatrix} =
+	\begin{bmatrix}
+		a c \\ a d \\a e \\ b c \\ b d \\ be
+	\end{bmatrix}, \textrm{~~and} \quad 
+	\begin{bmatrix}
+		a \\ b \\\\
+		c \\ d
+	\end{bmatrix}
+	\otimes
+	\begin{bmatrix}
+		e \\ f \\\\ g \\ h
+	\end{bmatrix} =
+	\begin{bmatrix}
+		a \begin{bmatrix}
+			e \\ f \\\\ g \\ h
+		\end{bmatrix}
+		b \begin{bmatrix}
+			e \\ f \\\\ g \\ h
+		\end{bmatrix}
+		\\\\[1em]
+		c \begin{bmatrix}
+			e \\ f \\\\ g \\ h
+		\end{bmatrix}
+		d \begin{bmatrix}
+			e \\ f \\\\ g \\ h
+		\end{bmatrix}
+	\end{bmatrix} =
+	\begin{bmatrix}
+		ae\\ af\\ be\\ bf \\\\
+		ag\\ ah\\ bg\\ bh \\\\
+		ce\\ cf\\ de\\ df \\\\
+		cg\\ ch\\ dg\\ dh
+	\end{bmatrix}.
+\end{equation}
 
 A final notation surrounding tensor products that is useful is that, for any vector $v$ or matrix $M$, $v^{\otimes n}$ or $M^{\otimes n}$ is short hand for an $n$--fold repeated tensor product.  For example
 $$
