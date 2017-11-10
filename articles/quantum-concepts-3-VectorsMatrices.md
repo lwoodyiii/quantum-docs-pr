@@ -34,22 +34,34 @@ A column vector (or simply vector) $v$ of dimension (or size) $n$ is a collectio
 		v_n
 	\end{bmatrix}.
 \end{equation}
-The norm of a vector $v$ is defined as $\sqrt{\sum\_i | v\_i|^2}$.
+The norm of a vector $v$ is defined as $\sqrt{\sum\_i | v\_i|\^2}$.
 A vector is said to be of unit norm (or alternatively it is called a unit vector) if its norm is $1$. The adjoint of a vector $v$ is denoted $v^\dagger$ and is defined to be the following row vector
 \begin{equation}
 	\begin{bmatrix}
 		x_1 \\\\
 		\vdots \\\\
 		x_n
-	\end{bmatrix}^\dagger = \begin{bmatrix}
+	\end{bmatrix}\^\dagger = \begin{bmatrix}
 		x_1^* & \cdots & x_n^*
 	\end{bmatrix}.
 \end{equation}
 
 The most common way to multiply two vectors together is through the inner product, otherwise known as a dot product.  The inner product gives the projection of one vector onto another and is invaluable in describing how to express one vector as a sum of other simpler vectors.  The inner product between $\phi$ and $\psi$, denoted $\left\langle \phi, \psi\right\rangle$ is defined as
-$$
-\left\langle \begin{bmatrix}\phi_1 \\\vdots\\ \phi_{n} \end{bmatrix},\begin{bmatrix}\psi_1 \\\vdots\\ \psi_{n} \end{bmatrix} \right\rangle = \phi^\dagger \psi=\phi_1^*\psi_1 + \cdots + \phi_n^* \psi_n.
-$$
+\begin{equation}
+	\ket{
+		\begin{bmatrix}
+			\phi_1 \\\\
+			\vdots \\\\
+			\phi_{n}
+		\end{bmatrix},
+		\begin{bmatrix}
+			\psi_1 \\\\
+			\vdots \\\\
+			\psi_{n}
+		\end{bmatrix}
+	}
+	= \phi^\dagger \psi=\phi_1^*\psi_1 + \cdots + \phi_n^* \psi_n.
+\end{equation}
 This notation also allows the norm of a vector $v$ to be written as $\sqrt{\langle v, v\rangle}$.
 
 We can multiply a vector with a number $c$ to form a new vector whose entries are multiplied by $c$. We can also add two vectors $u$ and $v$ to form a new vector whose entries are the sum of the entries of $u$ and $v$. These operations are depicted below:
