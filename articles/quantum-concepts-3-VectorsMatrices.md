@@ -101,6 +101,7 @@ A matrix of size $m \times n$ is a collection of $mn$ complex numbers arranged i
 Note that a vector of dimension $n$ is simply a matrix of size $n \times 1$. Just like with vectors, we can multiply a matrix with a number $c$ to obtain a new matrix where every entry is multiplied with $c$, and we can add two matrices of the same size to produce a new matrix whose entries are the sum of the respective entries of the two matrices.
 
 We can also multiply two matrices $M$ of dimension $m\times n$ and $N$ of dimension $n \times p$ to get a new matrix $P$ of dimension $m \times p$ as follows:
+$$
 \begin{equation}
 	\begin{bmatrix}
 		M_{11} ~~ M_{12} ~~ \cdots ~~ M_{1n} \\\\
@@ -121,9 +122,11 @@ We can also multiply two matrices $M$ of dimension $m\times n$ and $N$ of dimens
 		P_{m1} ~~ P_{m2} ~~ \cdots ~~ P_{mp} \\\\
 	\end{bmatrix},
 \end{equation}
+$$
 where the entry $P\_{ik} = \sum\_j M\_{ij}N\_{jk}$. For example, the entry $P\_{11}$ is the inner product of the first row of $M$ with the first column of $N$. Note that since a vector is simply a special case of a matrix, this definition extends to matrix--vector multiplication. 
 
 All the matrices we consider will either be square matrices, where the number of rows and columns are equal, or vectors, which corresponds to only $1$ column. One special square matrix is the identity matrix, denoted $\boldone$, which has all its diagonal elements equal to $1$ and the remaining elements equal to $0$:
+$$
 \begin{equation}
 	\boldone = \begin{bmatrix}
 		1 ~~ 0 ~~ \cdots ~~ 0 \\\\
@@ -132,11 +135,13 @@ All the matrices we consider will either be square matrices, where the number of
 		0 ~~ 0 ~~ \cdots ~~ 1 \\\\
 	\end{bmatrix}.
 \end{equation}
+$$
 For a square matrix $A$, we say a matrix $B$ is its inverse if $AB = \boldone$. The inverse of a matrix need not exist, but when it exists it is unique and we denote it $A^{-1}$. For any matrix $M$, the adjoint or conjugate transpose of $M$, is a matrix $N$ such that $N_{ij} = M^*_{ji}$. The adjoint of $M$ is usually denoted $M^\dagger$. We say a matrix $U$ is unitary if $UU^\dagger = \boldone$ or equivalently, $U^{-1} = U^\dagger$.  Perhaps the most important property of unitary matrices is that they preserve the norm of a vector.  This happens because $\langle v,v \rangle=v^\dagger v = v^\dagger U^{-1} U v = \langle U v, U v\rangle$.  
 
 
 
 Finally, the tensor product (or Kronecker product) of two matrices $M$ of size $m\times n$ and $N$ of size $p \times q$ is a larger matrix $P=M\otimes N$ of size $mp \times nq$, and is obtained from $M$ and $N$ as follows:
+$$
 \begin{equation}
 	M \otimes N =
 	\begin{bmatrix}
@@ -177,8 +182,10 @@ Finally, the tensor product (or Kronecker product) of two matrices $M$ of size $
 		\end{bmatrix} \\\\
 	\end{bmatrix}.
 \end{equation}
+$$
 
 This is better demonstrated using some examples:
+$$
 \begin{equation}
 	\begin{bmatrix}
 		a \\\\ b
@@ -230,6 +237,7 @@ This is better demonstrated using some examples:
 		cg\\ ch\\ dg\\ dh
 	\end{bmatrix}.
 \end{equation}
+$$
 
 A final notation surrounding tensor products that is useful is that, for any vector $v$ or matrix $M$, $v^{\otimes n}$ or $M^{\otimes n}$ is short hand for an $n$--fold repeated tensor product.  For example
 $$
