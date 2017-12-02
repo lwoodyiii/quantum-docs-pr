@@ -18,14 +18,14 @@ input:
   content: '(qubits : Qubit[])'
   types:
   - name: qubits
-    content: Qubit
-    isPrimitive: true
+    summary: >2
+       Register of qubits to which the gate is to be applied.
+    uid: microsoft.quantum.primitive.qubit
     isArray: true
 output:
   content: ()
   types:
-  - content: ()
-    isPrimitive: true
+  - uid: microsoft.quantum.primitive.integer
 functors:
 - Adjoint
 - Controlled

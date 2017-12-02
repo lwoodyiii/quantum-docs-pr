@@ -17,13 +17,12 @@ input:
   content: '(qubit : Qubit)'
   types:
   - name: qubit
-    content: Qubit
-    isPrimitive: true
+    summary: ' Qubit to which the gate should be applied.'
+    uid: microsoft.quantum.primitive.qubit
 output:
   content: ()
   types:
-  - content: ()
-    isPrimitive: true
+  - uid: microsoft.quantum.primitive.integer
 functors:
 - Adjoint
 - Controlled

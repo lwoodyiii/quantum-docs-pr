@@ -10,21 +10,23 @@ input:
   content: '(bases : Pauli[], qubits : Qubit[], result : Result, msg : String)'
   types:
   - name: bases
-    content: Pauli
-    isPrimitive: true
+    summary: >2-
+       A measurement effect to assert the probability of, expressed as a
+       mutli-qubit Pauli operator.
+    uid: microsoft.quantum.primitive.pauli
     isArray: true
   - name: msg
-    content: String
-    isPrimitive: true
+    summary: >2
+       A message to be reported if the assertion fails.
+    uid: microsoft.quantum.primitive.string
   - name: qubits
-    content: Qubit
-    isPrimitive: true
+    summary: ' A register on which to make the assertion.'
+    uid: microsoft.quantum.primitive.qubit
     isArray: true
   - name: result
-    content: Result
-    isPrimitive: true
+    summary: ' The expected result of `Measure(bases, qubits)`.'
+    uid: microsoft.quantum.primitive.result
 output:
   content: ()
   types:
-  - content: ()
-    isPrimitive: true
+  - uid: microsoft.quantum.primitive.integer

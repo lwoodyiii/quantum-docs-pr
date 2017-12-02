@@ -7,7 +7,7 @@ summary: >2
    Returns the bitwise exclusive-OR (XOR) between two integers.
 remarks: >2
 
-  ### Examples
+  ## Examples
    ```qsharp
    let a = 248;       //                 11111000₂
    let b = 63;        //                 00111111₂
@@ -17,15 +17,8 @@ syntax: 'function Xor (a : Int, b : Int) : Int'
 seealso: ' - [C# `^` Operator](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/xor-operator)'
 input:
   content: '(a : Int, b : Int)'
-  types:
-  - name: a
-    content: Int
-    isPrimitive: true
-  - name: b
-    content: Int
-    isPrimitive: true
+  types: []
 output:
   content: Int
   types:
-  - content: Int
-    isPrimitive: true
+  - uid: microsoft.quantum.primitive.integer

@@ -16,8 +16,10 @@ input:
   content: '(probs : Double[])'
   types:
   - name: probs
-    content: Double
-    isPrimitive: true
+    summary: >2
+       An array of floating-point numbers proportional to the probability of
+       selecting each index.
+    uid: microsoft.quantum.primitive.float
     isArray: true
 output:
   content: Int
@@ -25,5 +27,4 @@ output:
   - summary: >2-
        An integer $i$ with probability $\Pr(i) = p_i / \sum_i p_i$, where $p_i$
        is the $i$th element of `probs`.
-    content: Int
-    isPrimitive: true
+    uid: microsoft.quantum.primitive.integer

@@ -27,16 +27,16 @@ input:
   content: '(qubit1 : Qubit, qubit2 : Qubit)'
   types:
   - name: qubit1
-    content: Qubit
-    isPrimitive: true
+    summary: ' First qubit to be swapped.'
+    uid: microsoft.quantum.primitive.qubit
   - name: qubit2
-    content: Qubit
-    isPrimitive: true
+    summary: >2
+       Second qubit to be swapped.
+    uid: microsoft.quantum.primitive.qubit
 output:
   content: ()
   types:
-  - content: ()
-    isPrimitive: true
+  - uid: microsoft.quantum.primitive.integer
 functors:
 - Adjoint
 - Controlled

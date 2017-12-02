@@ -15,21 +15,24 @@ input:
   content: '(paulis : Pauli[], theta : Double, qubits : Qubit[])'
   types:
   - name: paulis
-    content: Pauli
-    isPrimitive: true
+    summary: >2-
+       Array of single-qubit Pauli values indicating the tensor product
+       factors on each qubit.
+    uid: microsoft.quantum.primitive.pauli
     isArray: true
   - name: qubits
-    content: Qubit
-    isPrimitive: true
+    summary: ' Register to apply the given rotation to.'
+    uid: microsoft.quantum.primitive.qubit
     isArray: true
   - name: theta
-    content: Double
-    isPrimitive: true
+    summary: >2-
+       Angle about the given multiqubit Pauli operator by which the
+       target register is to be rotated.
+    uid: microsoft.quantum.primitive.float
 output:
   content: ()
   types:
-  - content: ()
-    isPrimitive: true
+  - uid: microsoft.quantum.primitive.integer
 functors:
 - Adjoint
 - Controlled

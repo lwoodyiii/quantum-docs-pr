@@ -19,19 +19,19 @@ input:
   content: '(pauli : Pauli, theta : Double, qubit : Qubit)'
   types:
   - name: pauli
-    content: Pauli
-    isPrimitive: true
+    summary: ' Pauli operator to be exponentiated to form the rotation.'
+    uid: microsoft.quantum.primitive.pauli
   - name: qubit
-    content: Qubit
-    isPrimitive: true
+    summary: >2
+       Qubit to which the gate should be applied.
+    uid: microsoft.quantum.primitive.qubit
   - name: theta
-    content: Double
-    isPrimitive: true
+    summary: ' Angle about which the qubit is to be rotated.'
+    uid: microsoft.quantum.primitive.float
 output:
   content: ()
   types:
-  - content: ()
-    isPrimitive: true
+  - uid: microsoft.quantum.primitive.integer
 functors:
 - Adjoint
 - Controlled

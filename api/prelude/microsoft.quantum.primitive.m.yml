@@ -21,13 +21,13 @@ input:
   content: '(qubit : Qubit)'
   types:
   - name: qubit
-    content: Qubit
-    isPrimitive: true
+    summary: >2
+       Qubit to be measured.
+    uid: microsoft.quantum.primitive.qubit
 output:
   content: Result
   types:
   - summary: >2
        The `Result` `Zero` if the $+1$ eigenvalue is observed, and `One` if
        the $-1$ eigenvalue is observed.
-    content: Result
-    isPrimitive: true
+    uid: microsoft.quantum.primitive.result
