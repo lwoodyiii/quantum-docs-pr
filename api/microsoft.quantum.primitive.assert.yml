@@ -13,7 +13,7 @@ input:
     summary: >2-
        A measurement effect to assert the probability of, expressed as a
        mutli-qubit Pauli operator.
-    uid: microsoft.quantum.primitive.pauli
+    uid: Pauli
     isArray: true
   - name: msg
     summary: >2
