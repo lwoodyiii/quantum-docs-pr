@@ -1,5 +1,5 @@
 ### YamlMime:QSharpType
-uid: microsoft.quantum.canon.assertalmostequaltol
+uid: Microsoft.Quantum.Canon.AssertAlmostEqualTol
 name: AssertAlmostEqualTol
 type: function
 namespace: Microsoft.Quantum.Canon
