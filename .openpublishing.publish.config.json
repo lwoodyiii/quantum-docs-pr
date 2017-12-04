@@ -35,27 +35,6 @@
           "ConceptualTOCUrl": "/quantum/toc.json"
         }
       ]
-    },
-    {
-      "docset_name": "quantum-docs",
-      "build_source_folder": "articles",
-      "build_output_subfolder": "quantum-docs",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": false,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "Odata": "Content"
-      },
-      "customized_template_paths": [
-        "_dependentPackages/MarkdigEngine/content"
-      ],
-      "build_entry_point": "docs",
-      "template_folder": "_themes",
-      "enable_xrefmap_share": true,
-      "xref_query_tags": ["/qsharp"]
     }
   ],
   "notification_subscribers": [],
