@@ -5,26 +5,31 @@ author: QuantumWriter
 ms.author: martinro@microsoft.com 
 ms.date: 12/11/2017
 ms.topic: article
-# Use only one of the following. Use ms.service for services, ms.prod for on-prem. Remove the # before the relevant field.
-# For Quantum products none of these categories have been defined  yet.
-# ms.service: service-name-from-white-list
-# ms.prod: product-name-from-white-list
-# ms.technology: tech-name-from-white-list
 ---
+
 ## Period Finding ##
 
 Now that we have seen how the quantum Fourier transform and phase estimation work, we can use these tools to solve a classically hard computational problem called *t period finding*.  In the next section, we will see how to apply period finding to factoring.
 
-Given two integers $a$ and $N$, where $a<N$, the goal of period finding, also called order finding, is to find the {\it order} $r$ of $a$ modulo $N$, where $r$ is defined to be the least positive integer such that $a^r \equiv 1 \text{ mod } N$.  
+Given two integers $a$ and $N$, where $a<N$, the goal of period finding, also called order finding, is to find the *order* $r$ of $a$ modulo $N$, where $r$ is defined to be the least positive integer such that $a^r \equiv 1 \text{ mod } N$.  
 
 To find the order using a quantum computer, we can use the phase estimation algorithm applied to the following unitary operator $U_a$:
-$$ U_a|x\rangle \equiv |(ax)\text{ mod }N\rangle .$$
+
+\begin{align}
+    U_a|x\rangle \equiv |(ax)\text{ mod }N\rangle.
+\end{align}
+
 The eigenvectors of $U_a$ are for integer $s$ and $0\leq s \leq r - 1$,
-$$|x_s\rangle \equiv 1 / \sqrt{r} \sum\_{k=0}^{r-1} e^{\frac{-2\pi i sk}{r}} | a^k \text{ mod } N \rangle,$$ are {\it eigenstates} of $U_a$.
+
+\begin{align}
+    |x_s\rangle \equiv 1 / \sqrt{r} \sum\_{k=0}^{r-1} e^{\frac{-2\pi i sk}{r}} | a^k \text{ mod } N \rangle,
+\end{align}
+
+are *eigenstates* of $U_a$.
 The eigenvalues of $U_a$ are
 $$ U\_a |x\_s\rangle = e^{2\pi i s / r} | x\_s \rangle . $$
 
-Phase estimation thus outputs the eigenvalues $e^{2\pi i s / r}$ from which $r$ can be learned efficiently using [{\it continued fractions}](https://en.wikipedia.org/wiki/Continued_fraction) from $s / r$.
+Phase estimation thus outputs the eigenvalues $e^{2\pi i s / r}$ from which $r$ can be learned efficiently using [*continued fractions*](https://en.wikipedia.org/wiki/Continued_fraction) from $s / r$.
 
 Below is the circuit diagram for quantum period finding:
 
@@ -59,35 +64,39 @@ In turn, each modular multiplication can be computed using $n$ modular additions
 The quantum circuit below outlines the sequence of quantum gate operations:
 ![](../media/QPE.png)
 
-The circuit requires several phase-shift gate operations $R_k$, given by:
-$$ R_k = \left [ \begin{matrix}  1 & 0 \\ 0 & e^{i\theta_k}  \end{matrix} \right ],$$
+The circuit requires several phase-shift gate operations $R_k$, given by
+
+\begin{align}
+    R_k = &amp;
+        \left[ \begin{matrix}
+            1 & 0 \\\\
+            0 & e^{i\theta_k}
+        \end{matrix} \right],
+\end{align}
+
 where $\theta_k = -\pi \sum_{j=0}^{k-1} 2^{k-j}m_i$, where the sum runs over all previous measurements $j$ and $m_j\in{0,1}$ denotes the given measurement result.  That is, $m_0$ represents the least significant bit of the final result, and is extracted during the first measurement.  These gates are thus classically controlled gate operations, conditioned on the previous measurement results.  Together, they perform the inverse quantum Fourier transform.
- 
-\section{Factoring}
+
+# Factoring #
+
 The goal of factoring is to determine the two prime factors of integer $N$, where $N$ is an $n$-bit number.  
 Factoring consists of three parts: (1) a classical preprocessing routine; (2) a quantum computing routine to find the order of $a \text{ mod } N$; and (3) a classical preprocessing routine to derive the prime factors from the order.
 
 The classical preprocessing routine consists of the following steps:
-\begin{enumerate}
-\item If $N$ is even, return the prime factor $2$.
-\item If $N=p^q$ for $p\geq1$, $q\geq2$, return the prime factor $p$.  This step can be performed classically.
-\item Choose a random number $a$ such that $1<a\leq N-1$.
-\item If $\mbox{gcd}(a,N)>1$, return the prime factor $\mbox{gcd}(a,N)$. This step can be computed using Euclid's algorithm.
-\end{enumerate}
+
+1. If $N$ is even, return the prime factor $2$.
+2. If $N=p^q$ for $p\geq1$, $q\geq2$, return the prime factor $p$.  This step can be performed classically.
+3. Choose a random number $a$ such that $1<a\leq N-1$.
+4. If $\mbox{gcd}(a,N)>1$, return the prime factor $\mbox{gcd}(a,N)$. This step can be computed using Euclid's algorithm.
 
 If no prime factor has been returned, we proceed to the quantum routine:
-\begin{enumerate}
-\setcounter{enumi}{4}
-\item Call the quantum period finding algorithm to calculate the order $r$ of $a \text{ mod } N$. Return $r$.
-\end{enumerate}
+5. Call the quantum period finding algorithm to calculate the order $r$ of $a \text{ mod } N$. Return $r$.
 
 Finally, we perform a classical postprocessing routine to determine the prime factors:
-\begin{enumerate}
-\setcounter{enumi}{5}
-\item If $r$ is odd, go back to preprocessing step (3).
-\item If $r$ is even and $a^{r/2} = -1\text{ mod }N$, go back to preprocessing step (3).
-\item If $\mbox{gcd}(a^{r/2}+1, N)$ is a prime factor of $N$, return $\mbox{gcd}(a^{r/2}+1, N)$.
-\item If $\mbox{gcd}(a^{r/2}-1, N)$ is a prime factor of $N$, return $\mbox{gcd}(a^{r/2}-1, N)$.
-\end{enumerate}
+6. If $r$ is odd, go back to preprocessing step (3).
+7. If $r$ is even and $a^{r/2} = -1\text{ mod }N$, go back to preprocessing step (3).
+8. If $\mbox{gcd}(a^{r/2}+1, N)$ is a prime factor of $N$, return $\mbox{gcd}(a^{r/2}+1, N)$.
+9. If $\mbox{gcd}(a^{r/2}-1, N)$ is a prime factor of $N$, return $\mbox{gcd}(a^{r/2}-1, N)$.
 
-The factoring algorithm is probabilistic: it can been shown that with probability at least one half that $r$ will be even and $a^{r/2} \neq -1 \text{ mod }N$, thus producing a prime factor.  (See Shor's original paper for details, or Nielsen and Chuang).  If a prime factor is not returned, then we simply repeat the algorithm from step (1).
+The factoring algorithm is probabilistic: it can been shown that with probability at least one half that $r$ will be even and $a^{r/2} \neq -1 \text{ mod }N$, thus producing a prime factor. 
+(See Shor's original paper for details, or Nielsen and Chuang.)
+If a prime factor is not returned, then we simply repeat the algorithm from step (1).
