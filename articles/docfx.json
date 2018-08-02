@@ -46,9 +46,18 @@
     "fileMetadata": {
       "latex_macros": {
         "**/**.md": {
-          "ket": ["\\left| #1\\right\\rangle", 1],
-          "bra": ["\\left\\langle #1\\right|", 1],
-          "braket": ["\\left\\langle #1 \\right\\rangle", 1],
+          "ket": [
+            "\\left| #1\\right\\rangle",
+            1
+          ],
+          "bra": [
+            "\\left\\langle #1\\right|",
+            1
+          ],
+          "braket": [
+            "\\left\\langle #1 \\right\\rangle",
+            1
+          ],
           "boldone": "\\mathbf{1}",
           "expect": "\\mathbb{E}",
           "variance": "\\operatorname{Var}",
@@ -57,6 +66,7 @@
       }
     },
     "template": [],
-    "dest": "quantum-docs"
+    "dest": "quantum-docs",
+    "markdownEngineName": "markdig"
   }
 }

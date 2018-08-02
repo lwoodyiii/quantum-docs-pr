@@ -140,7 +140,6 @@ function InterpolatedEvolution(
         : (Qubit[] => () : Adjoint, Controlled) {
         ...
 }
- 
 ```
 
 This returns a unitary operation that implements all steps of adiabatic state preparation. The first parameter `interpolatedTime` defines the time over which we linearly interpolate between the start Hamiltonian described by the second parameter `evolutionGeneratorStart` and the end Hamiltonian described by the third parameter `evolutionGeneratorEnd`. The fourth parameter `timeDependentSimulationAlgorithm` is where one makes the choice of simulation algorithm. Note that if `interpolatedTime` is long enough, an initial ground state remains an instantaneous ground state of the Hamiltonian over the entire duration of time-dependent simulation, and thus ends in the ground state of the end Hamiltonian.
@@ -217,7 +216,7 @@ While the circuit above corresponds to [Quantum Phase Estimation](xref:microsoft
 [on Page 8 of arXiv:quant-ph/0205095v3](https://arxiv.org/pdf/quant-ph/0205095v3.pdf#page=8), or 
 use one of the phase estimation routines available in Microsoft.Quantum.Canon. For example, 
 [Robust Phase Estimation](xref:microsoft.quantum.canon.robustphaseestimation) also uses one extra qubit.
- 
+
 ### Factoring ###
 The goal of factoring is to determine the two prime factors of integer $N$, where $N$ is an $n$-bit number.  
 Factoring consists of the steps described below. The steps are split into three parts: a classical preprocessing routine (1-4); a quantum computing routine to find the order of $a \text{ mod } N$ (5); and a classical postprocessing routine to derive the prime factors from the order (6-9).
@@ -235,6 +234,6 @@ If no prime factor has been returned, we proceed to the quantum routine:
 9. If $\text{gcd}(a^{r/2}-1, N)$ is a non-trivial factor of $N$, return $\text{gcd}(a^{r/2}-1, N)$.
 
 
-The factoring algorithm is probabilistic: it can been shown that with probability at least one half that $r$ will be even and $a^{r/2} \neq -1 \text{ mod }N$, thus producing a prime factor.  (See [Shor's original paper](https://doi.org/10.1109/SFCS.1994.365700) for details, or one of the *Basic quantum computing* texts in [For more information](..\quantum-ForMoreInfo.md)).
+The factoring algorithm is probabilistic: it can been shown that with probability at least one half that $r$ will be even and $a^{r/2} \neq -1 \text{ mod }N$, thus producing a prime factor.  (See [Shor's original paper](https://doi.org/10.1109/SFCS.1994.365700) for details, or one of the *Basic quantum computing* texts in [For more information](../quantum-ForMoreInfo.md)).
 If a prime factor is not returned, then we simply repeat the algorithm from step (1).  After $n$ tries, the probability that every attempt has failed is at most $2^{-n}$.
 Thus after repeating the algorithm a small number of times success is virtually assured.

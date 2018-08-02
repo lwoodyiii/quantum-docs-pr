@@ -1,0 +1,1047 @@
+{
+  "homepages": [],
+  "source_base_path": "D:/a/1/s/target_repo/articles",
+  "xrefmap": [
+    "xrefmap.yml",
+    "qsharp-preview.xrefmap.yml"
+  ],
+  "files": [
+    {
+      "type": "Resource",
+      "source_relative_path": "media/1.svg",
+      "output": {
+        "resource": {
+          "relative_path": "media/1.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "media/2.svg",
+      "output": {
+        "resource": {
+          "relative_path": "media/2.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "media/3.svg",
+      "output": {
+        "resource": {
+          "relative_path": "media/3.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "media/4.svg",
+      "output": {
+        "resource": {
+          "relative_path": "media/4.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "media/5.svg",
+      "output": {
+        "resource": {
+          "relative_path": "media/5.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "media/6.svg",
+      "output": {
+        "resource": {
+          "relative_path": "media/6.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "media/7.svg",
+      "output": {
+        "resource": {
+          "relative_path": "media/7.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "media/8.svg",
+      "output": {
+        "resource": {
+          "relative_path": "media/8.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "media/8b.svg",
+      "output": {
+        "resource": {
+          "relative_path": "media/8b.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "media/Concepts1.png",
+      "output": {
+        "resource": {
+          "relative_path": "media/Concepts1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "media/ItQPE.png",
+      "output": {
+        "resource": {
+          "relative_path": "media/ItQPE.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "media/ItQPE.svg",
+      "output": {
+        "resource": {
+          "relative_path": "media/ItQPE.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "media/QPE.png",
+      "output": {
+        "resource": {
+          "relative_path": "media/QPE.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "media/QPE.svg",
+      "output": {
+        "resource": {
+          "relative_path": "media/QPE.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "media/beau.png",
+      "output": {
+        "resource": {
+          "relative_path": "media/beau.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "media/beau.svg",
+      "output": {
+        "resource": {
+          "relative_path": "media/beau.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "media/bloch.svg",
+      "output": {
+        "resource": {
+          "relative_path": "media/bloch.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "media/bloch2.svg",
+      "output": {
+        "resource": {
+          "relative_path": "media/bloch2.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "media/concepts_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "media/concepts_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "media/concepts_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "media/concepts_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "media/concepts_4.png",
+      "output": {
+        "resource": {
+          "relative_path": "media/concepts_4.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "media/concepts_5.png",
+      "output": {
+        "resource": {
+          "relative_path": "media/concepts_5.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "media/concepts_6.png",
+      "output": {
+        "resource": {
+          "relative_path": "media/concepts_6.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "media/concepts_7.png",
+      "output": {
+        "resource": {
+          "relative_path": "media/concepts_7.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "media/concepts_8.png",
+      "output": {
+        "resource": {
+          "relative_path": "media/concepts_8.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "media/concepts_8b.png",
+      "output": {
+        "resource": {
+          "relative_path": "media/concepts_8b.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "media/concepts_bloch.png",
+      "output": {
+        "resource": {
+          "relative_path": "media/concepts_bloch.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "media/concepts_stack.png",
+      "output": {
+        "resource": {
+          "relative_path": "media/concepts_stack.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "media/concepts_tp.png",
+      "output": {
+        "resource": {
+          "relative_path": "media/concepts_tp.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "media/concepts_tp2.png",
+      "output": {
+        "resource": {
+          "relative_path": "media/concepts_tp2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "media/draper.png",
+      "output": {
+        "resource": {
+          "relative_path": "media/draper.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "media/draper.svg",
+      "output": {
+        "resource": {
+          "relative_path": "media/draper.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "media/file-extension.png",
+      "output": {
+        "resource": {
+          "relative_path": "media/file-extension.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "media/mobius_strip_icon.png",
+      "output": {
+        "resource": {
+          "relative_path": "media/mobius_strip_icon.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "media/mobius_strip_large.png",
+      "output": {
+        "resource": {
+          "relative_path": "media/mobius_strip_large.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "media/mobius_strip_preview.png",
+      "output": {
+        "resource": {
+          "relative_path": "media/mobius_strip_preview.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "media/prelude_blochIdentity.png",
+      "output": {
+        "resource": {
+          "relative_path": "media/prelude_blochIdentity.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "media/prelude_hadamardBloch.png",
+      "output": {
+        "resource": {
+          "relative_path": "media/prelude_hadamardBloch.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "media/prelude_pauliBloch.png",
+      "output": {
+        "resource": {
+          "relative_path": "media/prelude_pauliBloch.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "media/prelude_rotationBloch.png",
+      "output": {
+        "resource": {
+          "relative_path": "media/prelude_rotationBloch.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "media/qubit_id.png",
+      "output": {
+        "resource": {
+          "relative_path": "media/qubit_id.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "media/stack.svg",
+      "output": {
+        "resource": {
+          "relative_path": "media/stack.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "media/teleportation.svg",
+      "output": {
+        "resource": {
+          "relative_path": "media/teleportation.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "media/tp.svg",
+      "output": {
+        "resource": {
+          "relative_path": "media/tp.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "media/tp2.svg",
+      "output": {
+        "resource": {
+          "relative_path": "media/tp2.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "media/unit-test-output.png",
+      "output": {
+        "resource": {
+          "relative_path": "media/unit-test-output.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "quantum-docs/media/1.svg",
+      "output": {
+        "resource": {
+          "relative_path": "quantum-docs/media/1.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "quantum-docs/media/2.svg",
+      "output": {
+        "resource": {
+          "relative_path": "quantum-docs/media/2.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "quantum-docs/media/3.svg",
+      "output": {
+        "resource": {
+          "relative_path": "quantum-docs/media/3.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "quantum-docs/media/4.svg",
+      "output": {
+        "resource": {
+          "relative_path": "quantum-docs/media/4.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "quantum-docs/media/5.svg",
+      "output": {
+        "resource": {
+          "relative_path": "quantum-docs/media/5.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "quantum-docs/media/6.svg",
+      "output": {
+        "resource": {
+          "relative_path": "quantum-docs/media/6.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "quantum-docs/media/7.svg",
+      "output": {
+        "resource": {
+          "relative_path": "quantum-docs/media/7.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "quantum-docs/media/8.svg",
+      "output": {
+        "resource": {
+          "relative_path": "quantum-docs/media/8.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "quantum-docs/media/8b.svg",
+      "output": {
+        "resource": {
+          "relative_path": "quantum-docs/media/8b.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "quantum-docs/media/Concepts1.png",
+      "output": {
+        "resource": {
+          "relative_path": "quantum-docs/media/Concepts1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "quantum-docs/media/ItQPE.png",
+      "output": {
+        "resource": {
+          "relative_path": "quantum-docs/media/ItQPE.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "quantum-docs/media/ItQPE.svg",
+      "output": {
+        "resource": {
+          "relative_path": "quantum-docs/media/ItQPE.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "quantum-docs/media/QPE.png",
+      "output": {
+        "resource": {
+          "relative_path": "quantum-docs/media/QPE.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "quantum-docs/media/QPE.svg",
+      "output": {
+        "resource": {
+          "relative_path": "quantum-docs/media/QPE.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "quantum-docs/media/beau.png",
+      "output": {
+        "resource": {
+          "relative_path": "quantum-docs/media/beau.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "quantum-docs/media/beau.svg",
+      "output": {
+        "resource": {
+          "relative_path": "quantum-docs/media/beau.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "quantum-docs/media/bloch.svg",
+      "output": {
+        "resource": {
+          "relative_path": "quantum-docs/media/bloch.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "quantum-docs/media/bloch2.svg",
+      "output": {
+        "resource": {
+          "relative_path": "quantum-docs/media/bloch2.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "quantum-docs/media/concepts_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "quantum-docs/media/concepts_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "quantum-docs/media/concepts_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "quantum-docs/media/concepts_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "quantum-docs/media/concepts_4.png",
+      "output": {
+        "resource": {
+          "relative_path": "quantum-docs/media/concepts_4.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "quantum-docs/media/concepts_5.png",
+      "output": {
+        "resource": {
+          "relative_path": "quantum-docs/media/concepts_5.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "quantum-docs/media/concepts_6.png",
+      "output": {
+        "resource": {
+          "relative_path": "quantum-docs/media/concepts_6.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "quantum-docs/media/concepts_7.png",
+      "output": {
+        "resource": {
+          "relative_path": "quantum-docs/media/concepts_7.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "quantum-docs/media/concepts_8.png",
+      "output": {
+        "resource": {
+          "relative_path": "quantum-docs/media/concepts_8.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "quantum-docs/media/concepts_8b.png",
+      "output": {
+        "resource": {
+          "relative_path": "quantum-docs/media/concepts_8b.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "quantum-docs/media/concepts_bloch.png",
+      "output": {
+        "resource": {
+          "relative_path": "quantum-docs/media/concepts_bloch.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "quantum-docs/media/concepts_stack.png",
+      "output": {
+        "resource": {
+          "relative_path": "quantum-docs/media/concepts_stack.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "quantum-docs/media/concepts_tp.png",
+      "output": {
+        "resource": {
+          "relative_path": "quantum-docs/media/concepts_tp.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "quantum-docs/media/concepts_tp2.png",
+      "output": {
+        "resource": {
+          "relative_path": "quantum-docs/media/concepts_tp2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "quantum-docs/media/draper.png",
+      "output": {
+        "resource": {
+          "relative_path": "quantum-docs/media/draper.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "quantum-docs/media/draper.svg",
+      "output": {
+        "resource": {
+          "relative_path": "quantum-docs/media/draper.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "quantum-docs/media/file-extension.png",
+      "output": {
+        "resource": {
+          "relative_path": "quantum-docs/media/file-extension.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "quantum-docs/media/mobius_strip_icon.png",
+      "output": {
+        "resource": {
+          "relative_path": "quantum-docs/media/mobius_strip_icon.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "quantum-docs/media/mobius_strip_large.png",
+      "output": {
+        "resource": {
+          "relative_path": "quantum-docs/media/mobius_strip_large.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "quantum-docs/media/mobius_strip_preview.png",
+      "output": {
+        "resource": {
+          "relative_path": "quantum-docs/media/mobius_strip_preview.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "quantum-docs/media/prelude_blochIdentity.png",
+      "output": {
+        "resource": {
+          "relative_path": "quantum-docs/media/prelude_blochIdentity.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "quantum-docs/media/prelude_hadamardBloch.png",
+      "output": {
+        "resource": {
+          "relative_path": "quantum-docs/media/prelude_hadamardBloch.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "quantum-docs/media/prelude_pauliBloch.png",
+      "output": {
+        "resource": {
+          "relative_path": "quantum-docs/media/prelude_pauliBloch.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "quantum-docs/media/prelude_rotationBloch.png",
+      "output": {
+        "resource": {
+          "relative_path": "quantum-docs/media/prelude_rotationBloch.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "quantum-docs/media/qubit_id.png",
+      "output": {
+        "resource": {
+          "relative_path": "quantum-docs/media/qubit_id.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "quantum-docs/media/stack.svg",
+      "output": {
+        "resource": {
+          "relative_path": "quantum-docs/media/stack.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "quantum-docs/media/teleportation.svg",
+      "output": {
+        "resource": {
+          "relative_path": "quantum-docs/media/teleportation.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "quantum-docs/media/tp.svg",
+      "output": {
+        "resource": {
+          "relative_path": "quantum-docs/media/tp.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "quantum-docs/media/tp2.svg",
+      "output": {
+        "resource": {
+          "relative_path": "quantum-docs/media/tp2.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "quantum-docs/media/unit-test-output.png",
+      "output": {
+        "resource": {
+          "relative_path": "quantum-docs/media/unit-test-output.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: it's disabled.",
+        "incrementalPhase": "postProcessing"
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {
+    "qsharp-preview": {
+      "version_folder": "qsharp-preview/"
+    }
+  },
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    },
+    {
+      "name": "qsharp-preview",
+      "dest": "qsharp-preview",
+      "xrefmap": "qsharp-preview.xrefmap.yml"
+    }
+  ]
+}

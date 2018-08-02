@@ -22,7 +22,7 @@ ms.topic: article-type-from-white-list
 <img src="media/mobius_strip_preview.png" style="float: right;" title="Quantum" alt="Quantum">
 # Quantum Development Techniques
 This section details the core concepts used to create quantum programs in Q#, and to interact with those programs from classical .NET applications.
-This section assumes some knowledge of quantum computing concepts like those described in [Quantum computing concepts](quantum-concepts-1-Intro.md).
+This section assumes some knowledge of quantum computing concepts like those described in <a href="quantum-concepts-1-Intro.md" data-raw-source="[Quantum computing concepts](quantum-concepts-1-Intro.md)">Quantum computing concepts</a>.
 
 
 

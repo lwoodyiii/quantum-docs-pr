@@ -73,15 +73,14 @@ You should now have the Quantum Development Kit installed and ready to use in yo
 
 In this section you will clone the quantum samples & libraries repository, and run a sample application to verify that your Q# environment is correctly installed and configured.
 
-#### [Visual Studio 2017](#tab/tabid-vs2017)
-
+#### [Visual Studio 2017](#tab/tabid-vs2017/)
 2. Clone and open the [Microsoft Quantum Developer Kit Samples and Libraries](https://github.com/microsoft/quantum) GitHub repository.
-    1. Open Visual Studio.
-    2. Open the **Connect** view in **Team Explorer** (`Team` > `Manage Connections`)
-    3. Select **Clone** under **Local Git Repositories** and enter `https://github.com/Microsoft/Quantum.git`
-    4. Click **Clone** to clone the repo.
-    5. The repository will be cloned on your local computer and Visual Studio will switch to the **Solution Explorer** on the right populated with the libraries and samples.
-    6. Open the `QsharpLibraries.sln` solution.
+   1. Open Visual Studio.
+   2. Open the **Connect** view in **Team Explorer** (`Team` > `Manage Connections`)
+   3. Select **Clone** under **Local Git Repositories** and enter `https://github.com/Microsoft/Quantum.git`
+   4. Click **Clone** to clone the repo.
+   5. The repository will be cloned on your local computer and Visual Studio will switch to the **Solution Explorer** on the right populated with the libraries and samples.
+   6. Open the `QsharpLibraries.sln` solution.
       - If prompted by the **Install Missing Features** pane, click **Install** to allow the installation of the necessary features. This is most often F# and tools used by some of the samples.
 
 3. Validate your Q# environment by running the teleport sample program:
@@ -91,32 +90,30 @@ In this section you will clone the quantum samples & libraries repository, and r
 > [!Tip]
 > If you receive a number of errors that reference NuGet packages, use the procedures in [NuGet package restore](https://docs.microsoft.com/en-us/nuget/consume-packages/package-restore) to restore the packages.
 
-#### [Command Line / Visual Studio Code](#tab/tabid-vscode)
-
+#### [Command Line / Visual Studio Code](#tab/tabid-vscode/)
 3. Clone and open the [Microsoft Quantum Developer Kit Samples and Libraries](https://github.com/microsoft/quantum) GitHub repository.
-  ```bash
-  $ git clone https://github.com/Microsoft/Quantum.git
-  ```
-  To continue at the command line, navigate into the newly cloned directory:
-  ```bash
-  $ cd Quantum
-  ```
-  If you would like to work with the new project in VS Code, run:
-  ```bash
-  $ code .
-  ```
-  You may be prompted to install the Microsoft Quantum Development Kit for Visual Studio Code and the Microsoft C# extension if you haven't already done so.
+   ```bash
+   $ git clone https://github.com/Microsoft/Quantum.git
+   ```
+   To continue at the command line, navigate into the newly cloned directory:
+   ```bash
+   $ cd Quantum
+   ```
+   If you would like to work with the new project in VS Code, run:
+   ```bash
+   $ code .
+   ```
+   You may be prompted to install the Microsoft Quantum Development Kit for Visual Studio Code and the Microsoft C# extension if you haven't already done so.
 
-  > [!TIP]
-  > If you are running on macOS and the `code` command is missing, you may need to [install the command line interface for Visual Studio Code](https://code.visualstudio.com/docs/editor/command-line).
+   > [!TIP]
+   > If you are running on macOS and the `code` command is missing, you may need to [install the command line interface for Visual Studio Code](https://code.visualstudio.com/docs/editor/command-line).
 
 4. From the terminal (standalone, or the embedded terminal in Visual Studio Code), run the teleport sample program:
-  ```bash
-  $ cd Samples/Teleportation/
-  $ dotnet run
-  ```
-****
-
+   ```bash
+   $ cd Samples/Teleportation/
+   $ dotnet run
+   ```
+* * *
 If the program runs and the output is similar to the following (has 8 rounds of successful teleportation with varying values True/False sent each round), your Q# environment is ready to support Q# development.
 
   ```

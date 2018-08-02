@@ -1,0 +1,7 @@
+### YamlMime:XRefMap
+sorted: true
+tags: []
+references:
+- uid: microsoft.quantum.standardlibsintro
+  name: Q# standard libraries
+  href: qsharp-preview/api/index.html

@@ -1,0 +1,79 @@
+### YamlMime:XRefMap
+sorted: true
+tags: []
+references:
+- uid: microsoft.quantum.concepts.circuits
+  name: Quantum circuits | Microsoft Docs
+  href: qsharp-preview/quantum-concepts-8-QuantumCircuits.html
+- uid: microsoft.quantum.concepts.control-flow
+  name: Q# standard libraries - control and flow | Microsoft Docs
+  href: qsharp-preview/libraries/control-flow.html
+- uid: microsoft.quantum.concepts.dirac
+  name: Dirac notation | Microsoft Docs
+  href: qsharp-preview/quantum-concepts-6-DiracNotation.html
+- uid: microsoft.quantum.concepts.intro
+  name: Quantum Computing Concepts
+  href: qsharp-preview/quantum-concepts-1-Intro.html
+- uid: microsoft.quantum.concepts.matrix-advanced
+  name: Advanced matrix concepts | Microsoft Docs
+  href: qsharp-preview/quantum-concepts-3-MatrixAdvanced.html
+- uid: microsoft.quantum.concepts.multiple-qubits
+  name: Multiple qubits | Microsoft Docs
+  href: qsharp-preview/quantum-concepts-5-MultipleQubits.html
+- uid: microsoft.quantum.concepts.oracles
+  name: Quantum oracles | Microsoft Docs
+  href: qsharp-preview/quantum-concepts-10-Oracles.html
+- uid: microsoft.quantum.concepts.pauli
+  name: Pauli Measurements | Microsoft Docs
+  href: qsharp-preview/quantum-concepts-7-PauliMeasurements.html
+- uid: microsoft.quantum.concepts.qubit
+  name: The qubit | Microsoft Docs
+  href: qsharp-preview/quantum-concepts-4-Qubit.html
+- uid: microsoft.quantum.concepts.software-stack
+  name: Software stack | Microsoft Docs
+  href: qsharp-preview/quantum-concepts-9-SoftwareStack.html
+- uid: microsoft.quantum.concepts.vectors
+  name: Vectors and matrices | Microsoft Docs
+  href: qsharp-preview/quantum-concepts-2-VectorsMatrices.html
+- uid: microsoft.quantum.index
+  name: Setting up the Q# development environment
+  href: qsharp-preview/index.html
+- uid: microsoft.quantum.libraries.applications
+  name: Q# standard libraries - applications | Microsoft Docs
+  href: qsharp-preview/libraries/applications.html
+- uid: microsoft.quantum.libraries.characterization
+  name: Q# standard libraries - characterization | Microsoft Docs
+  href: qsharp-preview/libraries/characterization.html
+- uid: microsoft.quantum.libraries.data-structures
+  name: Q# standard libraries - data structures | Microsoft Docs
+  href: qsharp-preview/libraries/data-structures.html
+- uid: microsoft.quantum.libraries.error-correction
+  name: Q# standard libraries - error correction | Microsoft Docs
+  href: qsharp-preview/libraries/error-correction.html
+- uid: microsoft.quantum.libraries.prelude
+  name: Q# standard libraries - prelude | Microsoft Docs
+  href: qsharp-preview/libraries/prelude.html
+- uid: microsoft.quantum.more-information
+  name: Quantum information references | Microsoft Docs
+  href: qsharp-preview/quantum-ForMoreInfo.html
+- uid: microsoft.quantum.qsharp-ref.file-structure
+  name: File Structure | Microsoft Docs
+  href: qsharp-preview/quantum-QR-FileStructure.html
+- uid: microsoft.quantum.qsharp-ref.statements
+  name: Q# statements | Microsoft Docs
+  href: qsharp-preview/quantum-QR-Statements.html
+- uid: microsoft.quantum.qsharp-ref.type-model
+  name: Q# type model | Microsoft Docs
+  href: qsharp-preview/quantum-QR-TypeModel.html
+- uid: microsoft.quantum.techniques.opsandfunctions
+  name: Q# techniques - operations and functions | Microsoft Docs
+  href: qsharp-preview/quantum-techniques-2-OperationsandFunctions.html
+- uid: microsoft.quantum.techniques.puttingittogether
+  name: Q# techniques - putting it all together | Microsoft Docs
+  href: qsharp-preview/quantum-techniques-6-PuttingItAllTogether.html
+- uid: microsoft.quantum.techniques.testing-and-debugging
+  name: Q# techniques - testing and debugging | Microsoft Docs
+  href: qsharp-preview/quantum-techniques-TestingAndDebugging.html
+- uid: microsoft.quantum.techniques.type-model
+  name: Q# techniques - type model | Microsoft Docs
+  href: qsharp-preview/quantum-techniques-4-TypeModel.html

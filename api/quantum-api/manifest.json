@@ -1,0 +1,27 @@
+{
+  "homepages": [],
+  "xrefmap": "qsharp-preview.xrefmap.yml",
+  "files": [],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: it's disabled.",
+        "incrementalPhase": "postProcessing"
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {
+    "qsharp-preview": {
+      "version_folder": "qsharp-preview/"
+    }
+  },
+  "groups": [
+    {
+      "name": "qsharp-preview",
+      "dest": "qsharp-preview",
+      "xrefmap": "qsharp-preview.xrefmap.yml"
+    }
+  ]
+}
