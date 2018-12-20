@@ -11,6 +11,7 @@ summary: >-
   the $n$-qubit computational basis state $\ket{0...0}$.
 
   The action of U on a newly-allocated register is given by
+  
   \begin{align}
       U\ket{0...0}=\ket{\psi}=\frac{\sum^{2^n-1}_{j=0}r_j e^{i t_j}\ket{j}}{\sqrt{\sum^{2^n-1}_{j=0}|r_j|^2}}.
   \end{align}
